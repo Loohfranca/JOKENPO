@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokempô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div>
+            <img class="logo"
+                src="assets/criar_um_logo_JOKEMPO__com_contorno_branco_e_a_cor_bem_chamativa_estilo_galaxia-removebg-preview.png"
+                alt="">
+        </div>
+    </main>
+
+    <header>
+
+    </header>
+    <div class="container">
+
+        <div class="buttons">
+            <button id="rock"onclick="playHuman('rock')">&#x1F44A;</button>
+            <button id="paper"onclick="playHuman('paper')">&#x270B;</button>
+            <button id="scissors"onclick="playHuman('scissors')">&#x270C;</button>
+        </div>
+
+        <p class="result"></p>
+
+           <p class="your-score"> Sua pontuação: <span id="human-score">0</span></p>
+        <p class="maachine-score"> Pontuação da Alexa: <span id="machine-score">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

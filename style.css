@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/jeremy-thomas-4dpAqfTbvKA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.logo {
+    width: 380px;
+}
+
+.container {
+    padding: 20px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    margin: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+button {
+    border: none;
+    font-size: 70px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+    width: 15vh;
+    height: 7.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+#rock {
+    background-color: hsla(303, 94%, 51%, 0.562);
+}
+#paper {
+    background-color: hsla(263, 100%, 43%, 0.836);
+}
+#scissors {
+    background-color: hsla(34, 94%, 51%, 0.822);
+}
+
+p {
+    font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.your-score span {
+    color: rgb(119, 3, 109);
+}
+
+.maachine-score span {
+    color: rgb(236, 9, 9);
+}
+
+
+/* Media Query para iPhone XR (414px de largura) */
+@media (max-width: 414px) {
+    .logo {
+        width: 90%; /* Ajuste para ocupar 90% da largura da tela */
+        max-width: 300px; /* Limita o tamanho máximo da logo */
+    }
+    
+    .container {
+        width: 95%; /* O container ocupa quase toda a largura da tela */
+        padding: 15px; /* Reduz o padding para economizar espaço */
+    }
+
+    .buttons {
+        flex-direction:row; /* Alinha os botões em coluna */
+        gap: 15px; /* Reduz o espaçamento entre os botões */
+    }
+
+    button {
+        width: 20vw; /* Largura responsiva em relação à tela */
+        height: 20vw; /* Altura igual à largura para formar um quadrado */
+        font-size: 10vw; /* Tamanho do texto ajustado */
+    }
+
+    p {
+        font-size: 18px; /* Reduz o tamanho da fonte para caber na tela menor */
+        text-align: center; /* Centraliza o texto */
+    }
+}
